@@ -38,7 +38,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Rumah Sehat"
-                   android:fontFamily="@font/Gotham_Regular"
+                   android:fontFamily="@font/gotham_regular"
                    android:padding="5dp"
                    android:textSize="14sp"
 
@@ -71,7 +71,7 @@
                    android:layout_marginRight="7dp"
                    android:text="20/01/2019 10:15:00"
                    android:textSize="9sp"
-                   android:fontFamily="@font/Gotham_Regular"
+                   android:fontFamily="@font/gotham_regular"
            />
 
 
@@ -111,7 +111,7 @@
                        android:layout_marginLeft="13dp"
                        android:text="Andi Wijaya"
                        android:textSize="14sp"
-                       android:fontFamily="@font/Gotham_SemiBold"
+                       android:fontFamily="@font/gotham_semibold"
                />
                    <TextView
                            android:id="@+id/txtNomorKK"
@@ -120,7 +120,7 @@
                            android:layout_height="wrap_content"
                            android:text="1234567890"
                            android:textSize="12sp"
-                           android:fontFamily="@font/Gotham_Regular"
+                           android:fontFamily="@font/gotham_regular"
                    />
                </LinearLayout>
            </LinearLayout>
@@ -144,7 +144,7 @@
                            android:layout_marginLeft="13dp"
                            android:text="Jl. Raya blbla"
                            android:textSize="14sp"
-                           android:fontFamily="@font/Gotham_SemiBold"
+                           android:fontFamily="@font/gotham_semibold"
                    />
                </LinearLayout>
            </LinearLayout>
