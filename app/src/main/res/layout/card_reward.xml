@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:cardElevation="3dp"
+    >
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+                <RelativeLayout
+                        android:id="@+id/bagianInfoReward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                >
+                    <TextView
+                            android:id="@+id/txtJumlahPendataan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5431"
+                            android:fontFamily="@font/gotham_semibold"
+                            android:textColor="#1c8572"
+                            android:textSize="23sp"
+                            android:layout_marginLeft="20dp"
+                    />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/txtJumlahPendataan"
+                            android:paddingTop="18sp"
+                            android:text="kali"
+                            android:fontFamily="@font/gotham_light"
+                            android:textColor="#1c8572"
+                            android:textSize="10sp"
+                    />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtJumlahPendataan"
+                            android:text="melakukan pendataan"
+                            android:fontFamily="@font/gotham_light"
+                            android:textColor="#1c8572"
+                            android:textSize="10sp"
+                            android:gravity="center"
+                    />
+
+                </RelativeLayout>
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="90dp"
+                    app:layout_constraintLeft_toRightOf="@id/bagianInfoReward"
+                    android:background="#e7e7e7"
+            />
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_weight="2"
+                    app:layout_constraintLeft_toRightOf="@id/bagianInfoReward"
+
+            >
+                <ImageView
+                        android:id="@+id/imgRewardIjo"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/rewardijo"
+                />
+                <TextView
+                        android:id="@+id/txtPeringkat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peringkat"
+                        android:layout_toRightOf="@id/imgRewardIjo"
+                        android:paddingTop="7dp"
+                        android:fontFamily="@font/gotham_regular"
+                        android:textSize="11sp"
+                        android:textColor="#02c423"
+                />
+                <TextView
+                        android:id="@+id/txtUrutanPeringkat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/txtPeringkat"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="7dp"
+                        android:text="1"
+                        android:fontFamily="@font/gotham_regular"
+                        android:textSize="11sp"
+                        android:textColor="#02c423"
+
+                />
+                <ImageView
+                        android:id="@+id/imgBuletBiru"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/imgRewardIjo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/buletbiru"
+                />
+                <TextView
+                        android:id="@+id/txtNamaKader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Siti Kulsum"
+                        android:layout_toRightOf="@id/imgBuletBiru"
+                        android:layout_below="@id/txtPeringkat"
+                        android:paddingTop="5dp"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/gotham_regular"
+                />
+                <ImageView
+                        android:id="@+id/imgLokasi"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/location"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/imgBuletBiru"
+                />
+                <TextView
+                        android:id="@+id/txtKelurahanKecamatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kel. Grogol, Kec. Limo"
+                        android:layout_toRightOf="@id/imgLokasi"
+                        android:layout_below="@id/txtNamaKader"
+                        android:fontFamily="@font/gotham_regular"
+                        android:textSize="11sp"
+                        android:paddingTop="4dp"
+                />
+
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
