@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">sippkling</string>
+    <string name="rumahsehat">Rumah Sehat</string>
+    <string name="tempatibadah">Tempat Ibadah</string>
+    <string name="pasar">Pasar</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="pesantren">Pesantren</string>
+    <string name="kolamrenang">Kolam Renang</string>
+    <string name="fasilitaskesehatan">Fasilitas Kesehatan</string>
+    <string name="hotel">Hotel</string>
+    <string name="hotelmelati">Hotel Melati</string>
+    <string name="puskesmas">Puskesmas</string>
+    <string name="rumahsakit">Rumah Sakit</string>
+    <string name="klinik">Klinik</string>
+    <string name="jasaboga">Pemeriksaan Jasa Boga</string>
+    <string name="rumahmakan">Rumah Makan dan Restaurant</string>
+    <string name="depotairminum">Depot Air Minum</string>
+    <string name="kesling">Kesehatan Lingkungan</string>
+
 </resources>

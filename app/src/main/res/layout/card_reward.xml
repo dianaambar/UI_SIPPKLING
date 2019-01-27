@@ -2,7 +2,8 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -21,7 +22,17 @@
                         app:layout_constraintHorizontal_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                 >
+                    <RelativeLayout
+                            android:id="@+id/jmlpendataan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                    >
                     <TextView
                             android:id="@+id/txtJumlahPendataan"
                             android:layout_width="wrap_content"
@@ -30,7 +41,6 @@
                             android:fontFamily="@font/gotham_semibold"
                             android:textColor="#1c8572"
                             android:textSize="23sp"
-                            android:layout_marginLeft="20dp"
                     />
                     <TextView
                             android:layout_width="wrap_content"
@@ -42,10 +52,11 @@
                             android:textColor="#1c8572"
                             android:textSize="10sp"
                     />
+                    </RelativeLayout>
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/txtJumlahPendataan"
+                            android:layout_below="@id/jmlpendataan"
                             android:text="melakukan pendataan"
                             android:fontFamily="@font/gotham_light"
                             android:textColor="#1c8572"
@@ -65,14 +76,23 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintHorizontal_weight="2"
                     app:layout_constraintLeft_toRightOf="@id/bagianInfoReward"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
 
             >
+                <RelativeLayout
+                        android:id="@+id/peringkat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                >
                 <ImageView
                         android:id="@+id/imgRewardIjo"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/rewardijo"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/reward"
                 />
                 <TextView
                         android:id="@+id/txtPeringkat"
@@ -80,10 +100,10 @@
                         android:layout_height="wrap_content"
                         android:text="Peringkat"
                         android:layout_toRightOf="@id/imgRewardIjo"
-                        android:paddingTop="7dp"
                         android:fontFamily="@font/gotham_regular"
                         android:textSize="11sp"
                         android:textColor="#02c423"
+                        android:paddingLeft="10dp"
                 />
                 <TextView
                         android:id="@+id/txtUrutanPeringkat"
@@ -91,42 +111,51 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/txtPeringkat"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginTop="7dp"
                         android:text="1"
                         android:fontFamily="@font/gotham_regular"
                         android:textSize="11sp"
                         android:textColor="#02c423"
 
                 />
+                </RelativeLayout>
+                <RelativeLayout
+                        android:id="@+id/namakader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/peringkat"
+                        android:gravity="center"
+                >
                 <ImageView
                         android:id="@+id/imgBuletBiru"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_below="@id/imgRewardIjo"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
                         android:src="@drawable/buletbiru"
+                        android:layout_centerVertical="true"
                 />
                 <TextView
                         android:id="@+id/txtNamaKader"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Siti Kulsum"
+                        android:paddingLeft="10dp"
                         android:layout_toRightOf="@id/imgBuletBiru"
-                        android:layout_below="@id/txtPeringkat"
-                        android:paddingTop="5dp"
                         android:textSize="11sp"
                         android:fontFamily="@font/gotham_regular"
                 />
+                </RelativeLayout>
+                <RelativeLayout
+                        android:id="@+id/alamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/namakader"
+                        android:gravity="center"
+                >
                 <ImageView
                         android:id="@+id/imgLokasi"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:src="@drawable/location"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_below="@id/imgBuletBiru"
+                        android:layout_centerVertical="true"
                 />
                 <TextView
                         android:id="@+id/txtKelurahanKecamatan"
@@ -134,11 +163,12 @@
                         android:layout_height="wrap_content"
                         android:text="Kel. Grogol, Kec. Limo"
                         android:layout_toRightOf="@id/imgLokasi"
-                        android:layout_below="@id/txtNamaKader"
                         android:fontFamily="@font/gotham_regular"
                         android:textSize="11sp"
-                        android:paddingTop="4dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
                 />
+                </RelativeLayout>
 
             </RelativeLayout>
 

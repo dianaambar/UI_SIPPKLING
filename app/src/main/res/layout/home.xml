@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:fitsSystemWindows="true"
 >
@@ -87,18 +87,21 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                     >
                     <RelativeLayout
-                            android:id="@+id/infoKader"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
                     >
                         <LinearLayout
+                                android:id="@+id/infoKader"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
-                                android:paddingLeft="20dp"
-                                android:paddingTop="20dp"
+                                android:layout_centerVertical="true"
                         >
                             <TextView
                                     android:id="@+id/txtNamaKaderHome"
@@ -118,13 +121,13 @@
                             />
                         </LinearLayout>
                         <LinearLayout
-                                android:layout_width="match_parent"
+                                android:layout_toRightOf="@id/infoKader"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
-                                android:paddingLeft="20dp"
-                                android:paddingTop="20dp"
                                 android:gravity="end"
-                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="20dp"
                         >
                             <LinearLayout
                                     android:layout_width="wrap_content"
@@ -176,28 +179,29 @@
                             android:layout_gravity="center"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="@id/infoKader"
-                            android:layout_marginTop="20dp"
                             android:src="@drawable/garis"
                     />
                     <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="100dp"
                             android:orientation="horizontal"
-                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
                     >
                         <RelativeLayout
                                 android:id="@+id/bagianNotif"
                                 android:layout_width="35dp"
-                                android:layout_height="80dp"
-                                android:layout_marginLeft="25dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
                         >
                             <ImageView
                                     android:id="@+id/imgNotif"
                                     android:layout_width="45dp"
                                     android:layout_height="45dp"
                                     android:src="@drawable/notifications"
-                                    android:layout_marginTop="6dp"
+                                    android:layout_centerInParent="true"
                             />
                             <TextView
                                     android:id="@+id/txtJumlahPesan"
@@ -209,10 +213,8 @@
                                     android:gravity="center"
                                     android:fontFamily="@font/gotham_medium"
                                     android:background="@drawable/bulet"
-                                    android:backgroundTint="#3ade45"
-                                    android:layout_marginLeft="32dp"
-
-
+                                    android:layout_marginLeft="45dp"
+                                    android:layout_marginTop="19dp"
                             />
                             <TextView
                                     android:layout_width="wrap_content"
@@ -221,47 +223,52 @@
                                     android:text="Pesan"
                                     android:fontFamily="@font/gotham_regular"
                                     android:textSize="11sp"
-                                    android:layout_marginLeft="5dp"
+                                    android:layout_centerInParent="true"
                             />
 
                         </RelativeLayout>
                         <RelativeLayout
                                 android:id="@+id/bagianRiwayat"
-                                android:layout_width="75dp"
-                                android:layout_height="80dp"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:layout_gravity="center"
+                                android:gravity="center"
                         >
                             <ImageView
                                     android:id="@+id/imgRiwayatPendataan"
                                     android:layout_width="45dp"
                                     android:layout_marginLeft="33dp"
                                     android:layout_height="45dp"
-                                    android:layout_marginTop="6dp"
                                     android:src="@drawable/riwayat_pendataan"
+                                    android:layout_centerInParent="true"
                             />
                             <TextView
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Riwayat Pendataan"
                                     android:textSize="11sp"
                                     android:fontFamily="@font/gotham_regular"
                                     android:layout_below="@id/imgRiwayatPendataan"
+                                    android:layout_centerInParent="true"
+
                             />
 
                         </RelativeLayout>
                         <RelativeLayout
                                 android:id="@+id/bagianReward"
                                 android:layout_width="wrap_content"
-                                android:layout_height="80dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_gravity="center"
                         >
                             <ImageView
                                     android:id="@+id/imgReward"
                                     android:layout_width="45dp"
                                     android:layout_height="45dp"
                                     android:src="@drawable/reward"
-                                    android:layout_marginTop="6dp"
+                                    android:layout_centerInParent="true"
                             />
                             <TextView
                                     android:layout_width="wrap_content"
@@ -270,6 +277,7 @@
                                     android:layout_below="@id/imgReward"
                                     android:fontFamily="@font/gotham_regular"
                                     android:textSize="11dp"
+                                    android:layout_centerInParent="true"
                             />
 
 
@@ -323,20 +331,292 @@
             
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/listSubMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/bagianInfoKecil"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:overScrollMode="never"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-            >
+                <LinearLayout
+                        android:id="@+id/baris1"
+                        app:layout_constraintTop_toBottomOf="@id/bagianInfoKecil"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_margin="10dp"
+                >
+                    <androidx.cardview.widget.CardView
+                            android:layout_weight="1"
+                            android:id="@+id/buttonRumahSehat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="13dp"
+                            app:cardElevation="8dp"
+                            app:contentPadding="5dp"
+                            android:layout_margin="7dp"
+                    >
+                        <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                        >
+                            <ImageView
+                                    android:id="@+id/imgRumahSehat"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/rumahsehaticon"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toTopOf="@id/txtRumahSehat"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    app:layout_constraintVertical_chainStyle="packed"
+                            />
+                            <TextView
+                                    android:id="@+id/txtRumahSehat"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toBottomOf="@id/imgRumahSehat"
+                                    android:text="@string/rumahsehat"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:fontFamily="@font/gotham_light"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    android:textSize="8sp"
+                                    android:gravity="center"
+                            />
 
-            </androidx.recyclerview.widget.RecyclerView>
+                        </android.support.constraint.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                            android:layout_weight="1"
+                            android:id="@+id/buttonKesling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="13dp"
+                            app:cardElevation="8dp"
+                            app:contentPadding="2dp"
+                            android:layout_margin="7dp"
+                    >
+                        <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                        >
+                            <ImageView
+                                    android:id="@+id/imgPelayananLingkungan"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/kesehatanlingkungan"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintBottom_toTopOf="@id/txtKesLing"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    app:layout_constraintVertical_chainStyle="packed"
+                            />
+                            <TextView
+                                    android:id="@+id/txtKesLing"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toBottomOf="@id/imgPelayananLingkungan"
+                                    android:text="@string/kesling"
+                                    android:fontFamily="@font/gotham_light"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    android:textSize="8sp"
+                                    android:gravity="center"
+                            />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                            android:layout_weight="1"
+                            android:id="@+id/buttonRestaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="13dp"
+                            app:cardElevation="8dp"
+                            app:contentPadding="5dp"
+                            android:layout_margin="7dp"
+                    >
+                        <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                        >
+                            <ImageView
+                                    android:id="@+id/imgRumahMakan"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/rumahmakanrestaurant"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    app:layout_constraintVertical_chainStyle="packed"/>
+                            <TextView
+                                    android:id="@+id/txtRumahMakan"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toBottomOf="@id/imgRumahMakan"
+                                    android:text="@string/rumahmakan"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/gotham_light"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    android:textSize="8sp"
+                            />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            <LinearLayout
+                    app:layout_constraintTop_toBottomOf="@id/baris1"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_margin="10dp"
+            >
+                <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:id="@+id/buttonSekolah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="8dp"
+                        app:contentPadding="3dp"
+                        android:layout_margin="7dp"
+                >
+                    <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                    >
+                        <ImageView
+                                android:id="@+id/imgSekolah"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/sekolah"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toTopOf="@id/txtSekolah"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintVertical_chainStyle="packed"
+                        />
+                        <TextView
+                                android:id="@+id/txtSekolah"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@id/imgSekolah"
+                                android:text="@string/sekolah"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:fontFamily="@font/gotham_light"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:textSize="8sp"
+                                android:gravity="center"
+                        />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:id="@+id/buttonPasar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="8dp"
+                        app:contentPadding="3dp"
+                        android:layout_margin="7dp"
+                >
+                    <android.support.constraint.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                    >
+                        <ImageView
+                                android:id="@+id/imgPasar"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/pasar"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toTopOf="@id/txtPasar"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintVertical_chainStyle="packed"
+                        />
+                        <TextView
+                                android:id="@+id/txtPasar"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@id/imgPasar"
+                                android:text="@string/pasar"
+                                android:fontFamily="@font/gotham_light"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:textSize="8sp"
+                                android:gravity="center"
+                        />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:id="@+id/buttonLainnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="8dp"
+                        app:contentPadding="5dp"
+                        android:layout_margin="5dp"
+                >
+                    <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                    >
+                        <ImageView
+                                android:id="@+id/imgLainnya"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/lainnnya"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintVertical_chainStyle="packed"/>
+                        <TextView
+                                android:id="@+id/txtLainnya"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@id/imgLainnya"
+                                android:text="Lainnya"
+                                android:gravity="center"
+                                android:fontFamily="@font/gotham_light"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:textSize="8sp"
+                        />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
 
         </android.support.constraint.ConstraintLayout>
 
