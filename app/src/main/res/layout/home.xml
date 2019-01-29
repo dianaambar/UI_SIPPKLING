@@ -39,13 +39,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
             >
             <ImageView
                     android:id="@+id/imgCuaca"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/cuaca"
-                    android:layout_marginBottom="20dp"
             />
             <TextView
                     android:id="@+id/txtSuhu"
@@ -55,7 +55,6 @@
                     android:fontFamily="@font/gotham_semibold"
                     android:textColor="#1c8572"
                     android:textSize="19dp"
-                    android:layout_marginBottom="20dp"
                     android:layout_marginLeft="7dp"
             />
                 <ImageView
@@ -121,7 +120,7 @@
                             />
                         </LinearLayout>
                         <LinearLayout
-                                android:layout_toRightOf="@id/infoKader"
+                                android:layout_toEndOf="@id/infoKader"
                                 android:layout_centerVertical="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

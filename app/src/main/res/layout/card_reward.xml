@@ -45,15 +45,16 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@id/txtJumlahPendataan"
-                            android:paddingTop="18sp"
+                            android:layout_toEndOf="@id/txtJumlahPendataan"
                             android:text="kali"
+                            android:paddingTop="15dp"
                             android:fontFamily="@font/gotham_light"
                             android:textColor="#1c8572"
                             android:textSize="10sp"
                     />
                     </RelativeLayout>
                     <TextView
+                            android:id="@+id/mp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/jmlpendataan"
@@ -99,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Peringkat"
-                        android:layout_toRightOf="@id/imgRewardIjo"
+                        android:layout_toEndOf="@id/imgRewardIjo"
                         android:fontFamily="@font/gotham_regular"
                         android:textSize="11sp"
                         android:textColor="#02c423"
@@ -109,8 +110,8 @@
                         android:id="@+id/txtUrutanPeringkat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/txtPeringkat"
-                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@id/txtPeringkat"
+                        android:layout_marginStart="5dp"
                         android:text="1"
                         android:fontFamily="@font/gotham_regular"
                         android:textSize="11sp"
@@ -137,8 +138,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Siti Kulsum"
-                        android:paddingLeft="10dp"
-                        android:layout_toRightOf="@id/imgBuletBiru"
+                        android:paddingStart="10dp"
+                        android:layout_toEndOf="@id/imgBuletBiru"
                         android:textSize="11sp"
                         android:fontFamily="@font/gotham_regular"
                 />
@@ -162,11 +163,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kel. Grogol, Kec. Limo"
-                        android:layout_toRightOf="@id/imgLokasi"
+                        android:layout_toEndOf="@id/imgLokasi"
                         android:fontFamily="@font/gotham_regular"
                         android:textSize="11sp"
                         android:gravity="center"
-                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
                 />
                 </RelativeLayout>
 
