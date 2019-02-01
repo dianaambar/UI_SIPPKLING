@@ -219,6 +219,7 @@
             android:textColor="#50b178"
             android:textSize="14sp"
             android:background="@drawable/logoutbutton"
+            android:gravity="center"
     />
 
 </android.support.constraint.ConstraintLayout>

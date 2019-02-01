@@ -8,7 +8,7 @@
         tools:context=".KategoriPendataan">
 
 
-    <androidx.core.widget.NestedScrollView
+    <android.support.v4.widget.NestedScrollView
             android:id="@+id/scrollContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/pendataanUtama"
+                    android:layout_below="@+id/pendataanUtama"
                     android:layout_margin="3dp"
             >
             <ImageView
@@ -50,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rumahsehat"
-                    android:layout_below="@id/imgRumahSehat"
+                    android:layout_below="@+id/imgRumahSehat"
                     android:textSize="10sp"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/gotham_light"
@@ -62,7 +62,7 @@
                 android:id="@+id/bagianTempatUmum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/bagianPendataanUtama"
+                app:layout_constraintTop_toBottomOf="@+id/bagianPendataanUtama"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
 
@@ -75,7 +75,7 @@
                     android:textSize="11sp"
             />
             <LinearLayout
-                    android:layout_below="@id/tempatUmum"
+                    android:layout_below="@+id/tempatUmum"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -104,7 +104,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/rumahsakit"
-                                android:layout_below="@id/imgRumahSakit"
+                                android:layout_below="@+id/imgRumahSakit"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -116,7 +116,7 @@
                             android:layout_weight="1"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/rumahSakit"
+                            android:layout_below="@+id/rumahSakit"
                     >
                         <ImageView
                                 android:id="@+id/imgPuskesmas"
@@ -129,7 +129,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/puskesmas"
-                                android:layout_below="@id/imgPuskesmas"
+                                android:layout_below="@+id/imgPuskesmas"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -155,7 +155,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/klinik"
-                                android:layout_below="@id/imgKlinik"
+                                android:layout_below="@+id/imgKlinik"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -171,7 +171,7 @@
                         android:orientation="vertical"
                 >
                     <RelativeLayout
-                            android:layout_toRightOf="@id/rumahSakit"
+                            android:layout_toRightOf="@+id/rumahSakit"
                             android:id="@+id/tempatIbadah"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tempatibadah"
-                                android:layout_below="@id/imgTempatIbadah"
+                                android:layout_below="@+id/imgTempatIbadah"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -197,8 +197,8 @@
 
                     </RelativeLayout>
                     <RelativeLayout
-                            android:layout_toRightOf="@id/puskesmas"
-                            android:layout_below="@id/tempatIbadah"
+                            android:layout_toRightOf="@+id/puskesmas"
+                            android:layout_below="@+id/tempatIbadah"
                             android:id="@+id/Pesantren"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
@@ -216,7 +216,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/pesantren"
-                                android:layout_below="@id/imgPesantren"
+                                android:layout_below="@+id/imgPesantren"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -224,8 +224,8 @@
 
                     </RelativeLayout>
                     <RelativeLayout
-                            android:layout_toRightOf="@id/Klinik"
-                            android:layout_below="@id/Pesantren"
+                            android:layout_toRightOf="@+id/Klinik"
+                            android:layout_below="@+id/Pesantren"
                             android:id="@+id/Hotel"
                             android:layout_margin="3dp"
                             android:layout_width="70dp"
@@ -243,7 +243,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/hotel"
-                                android:layout_below="@id/imgHotel"
+                                android:layout_below="@+id/imgHotel"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -258,7 +258,7 @@
                         android:orientation="vertical"
                 >
                     <RelativeLayout
-                            android:layout_toRightOf="@id/tempatIbadah"
+                            android:layout_toRightOf="@+id/tempatIbadah"
                             android:id="@+id/sekolah"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
@@ -275,7 +275,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/sekolah"
-                                android:layout_below="@id/imgSekolah"
+                                android:layout_below="@+id/imgSekolah"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -283,8 +283,8 @@
 
                     </RelativeLayout>
                     <RelativeLayout
-                            android:layout_toRightOf="@id/Pesantren"
-                            android:layout_below="@id/sekolah"
+                            android:layout_toRightOf="@+id/Pesantren"
+                            android:layout_below="@+id/sekolah"
                             android:id="@+id/kolamRenang"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
@@ -301,7 +301,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/kolamrenang"
-                                android:layout_below="@id/imgKolamRenang"
+                                android:layout_below="@+id/imgKolamRenang"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -318,7 +318,7 @@
                         android:orientation="vertical"
                 >
                     <RelativeLayout
-                            android:layout_toRightOf="@id/sekolah"
+                            android:layout_toRightOf="@+id/sekolah"
                             android:id="@+id/Pasar"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
@@ -335,7 +335,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/pasar"
-                                android:layout_below="@id/imgPasar"
+                                android:layout_below="@+id/imgPasar"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:fontFamily="@font/gotham_light"
@@ -343,8 +343,8 @@
 
                     </RelativeLayout>
                     <RelativeLayout
-                            android:layout_toRightOf="@id/kolamRenang"
-                            android:layout_below="@id/Pasar"
+                            android:layout_toRightOf="@+id/kolamRenang"
+                            android:layout_below="@+id/Pasar"
                             android:id="@+id/HotelMelati"
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"
@@ -362,7 +362,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/hotelmelati"
-                                android:layout_below="@id/imgHotelMelati"
+                                android:layout_below="@+id/imgHotelMelati"
                                 android:layout_centerHorizontal="true"
                                 android:textSize="9sp"
                                 android:gravity="center"
@@ -378,7 +378,7 @@
         </RelativeLayout>
         <RelativeLayout
                 android:id="@+id/bagianPelayanKesLing"
-                app:layout_constraintTop_toBottomOf="@id/bagianTempatUmum"
+                app:layout_constraintTop_toBottomOf="@+id/bagianTempatUmum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             <TextView
@@ -391,7 +391,7 @@
             <RelativeLayout
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/pelayanKesLIing"
+                    android:layout_below="@+id/pelayanKesLIing"
                     android:layout_margin="3dp"
                     android:gravity="center"
             >
@@ -408,7 +408,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kesling"
-                    android:layout_below="@id/imgKesling"
+                    android:layout_below="@+id/imgKesling"
                     android:textSize="10sp"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/gotham_light"
@@ -421,7 +421,7 @@
                 android:id="@+id/bagianTempatKelolaMakanan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/bagianPelayanKesLing"
+                app:layout_constraintTop_toBottomOf="@+id/bagianPelayanKesLing"
         >
             <TextView
                     android:id="@+id/PengelolaanMakanan"
@@ -435,7 +435,7 @@
                     android:id="@+id/depotAirMinum"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/PengelolaanMakanan"
+                    android:layout_below="@+id/PengelolaanMakanan"
                     android:layout_margin="3dp"
             >
                 <ImageView
@@ -451,7 +451,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/rumahsehat"
-                        android:layout_below="@id/imgDepotAirMinum"
+                        android:layout_below="@+id/imgDepotAirMinum"
                         android:textSize="10sp"
                         android:layout_centerHorizontal="true"
                         android:fontFamily="@font/gotham_light"
@@ -460,8 +460,8 @@
             </RelativeLayout>
             <RelativeLayout
                     android:id="@+id/restoran"
-                    android:layout_toEndOf="@id/depotAirMinum"
-                    android:layout_below="@id/PengelolaanMakanan"
+                    android:layout_toEndOf="@+id/depotAirMinum"
+                    android:layout_below="@+id/PengelolaanMakanan"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -479,7 +479,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/rumahmakan"
-                        android:layout_below="@id/imgRumahMakan"
+                        android:layout_below="@+id/imgRumahMakan"
                         android:textSize="10sp"
                         android:layout_centerHorizontal="true"
                         android:fontFamily="@font/gotham_light"
@@ -490,8 +490,8 @@
                     android:id="@+id/jasaBoga"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/PengelolaanMakanan"
-                    android:layout_toEndOf="@id/restoran"
+                    android:layout_below="@+id/PengelolaanMakanan"
+                    android:layout_toEndOf="@+id/restoran"
                     android:layout_margin="3dp"
             >
                 <ImageView
@@ -507,7 +507,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/jasaboga"
-                        android:layout_below="@id/imgJasaBoga"
+                        android:layout_below="@+id/imgJasaBoga"
                         android:textSize="10sp"
                         android:layout_centerHorizontal="true"
                         android:fontFamily="@font/gotham_light"
@@ -518,6 +518,6 @@
         </RelativeLayout>
 
     </android.support.constraint.ConstraintLayout>
-    </androidx.core.widget.NestedScrollView>
+    </android.support.v4.widget.NestedScrollView>
 
 </android.support.constraint.ConstraintLayout>
